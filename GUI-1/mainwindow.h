@@ -3,6 +3,13 @@
 
 #include <QMainWindow>
 
+#include <QtSql>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QDebug>
+#include <QMessageBox>
+
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -15,7 +22,11 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_loginButton_clicked();
+
 private:
     Ui::MainWindow *ui;
+    QSqlDatabase db;
 };
 #endif // MAINWINDOW_H

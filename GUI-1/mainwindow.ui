@@ -2,6 +2,14 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>418</height>
+   </rect>
+  </property>
   <property name="minimumSize">
    <size>
     <width>620</width>
@@ -95,7 +103,7 @@ background-color: white;
           </widget>
          </item>
          <item row="0" column="1">
-          <widget class="QLineEdit" name="lineEdit">
+          <widget class="QLineEdit" name="userInput">
            <property name="minimumSize">
             <size>
              <width>150</width>
@@ -112,12 +120,15 @@ background-color: white;
           </widget>
          </item>
          <item row="1" column="1">
-          <widget class="QLineEdit" name="lineEdit_2">
+          <widget class="QLineEdit" name="passwordInput">
            <property name="minimumSize">
             <size>
              <width>150</width>
              <height>25</height>
             </size>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
            </property>
           </widget>
          </item>
@@ -155,7 +166,7 @@ background-color: white;
        </spacer>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="loginButton">
         <property name="minimumSize">
          <size>
           <width>265</width>
